@@ -1,0 +1,23 @@
+\documentclass[a4paper]{article}
+\usepackage{styles}
+\usepackage{emptypage}
+
+\begin{document}
+  \input{titlepage}
+
+  \pagenumbering{roman}
+  \stepcounter{page}
+  \tableofcontents
+  \newpage
+
+  \pagenumbering{arabic}
+  \section{Voorstelling}
+  \input{sections/voorstelling}
+  \section{Overzicht activiteiten}
+  \input{sections/overzicht_activiteiten}
+  \section{Selectie van activiteiten}
+  \input{sections/selectie_van_activiteiten}
+  \section{Eindreflectie}
+  \input{sections/eindreflectie}
+
+\end{document}
