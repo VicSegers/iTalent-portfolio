@@ -1,42 +1,36 @@
 % https://pxl-digital.pxl.be/page/seminarie-aarixa-27-02
 
-Mijn eerste seminarie ging over Docker, een tool om applicaties in containers te runnen. De spreker Sven Luts, software engineer bij AariXa, kwam uitleggen wat deze tool is, waarom het gebruikt wordt en hoe het achterliggend werkt aan de hand van demo's.
+Het eerste seminaire dat ik volgde voor iTalent ging over Docker, een tool om applicatie in containers te runnen. De spreker Sven Luts, softwareengineer bij AariXa, gaf uitleg over wat deze tool is, waarom het gebruikt wordt en hoe het achterliggend werkt. Hij maakte ook gebruik van demo's om de aangehaalde onderwerpen te verduidelijken.
 
-Als aller eerste stelde de spreker zich voor, hij vertelde waar hij werkte, wat zijn hobby's waren en wat zijn specialiteiten zijn op gebied van informatica. Dan begon de introductie van Docker, het is een tool gemaakt om het versimpelen van het aanmaken, deployen en runnen van applicaties gebruik makend van containers.
+In het begin stelde de spreker zich voor. Hij deelde zijn werkplek, zijn hobby's en zijn specialiteiten op gebied van informatica met ons. De introductie van Docker volgde zijn introductie. Docker is een tool gemaakt om het aanmaken, het deployen en het runnen van applicaties in containers te versimpelen.
 
-Het volgende onderdeel ging over waarom je Docker moet gebruiken. Het vereenvoudigd het maken en deployen van software, het is veel sneller dan dan virtuele machines, heeft ingebouwde version tracking en het voorkomt de gekende uitspraak: "It works on my machine". Omdat het in een afgeschermde en geïsoleerde omgeving is, hoef je geen rekening te houden met reeds geïnstalleerde dependencies of conflicterende dependencies. Door gebruik te maken van Docker tags, heb je al een ingebouwde versie tracking. En omdat de container op eender welke computer kan runnen en iedere keer exact hetzelfde zal reageren en dezelfde dependencies hebben.
+Vervolgens gaf de spreker een uitleg over waarom je Docker moet gebruiken. Het vereenvoudigd niet alleen het maken en het deployen van software, maar het is ook veel sneller dan een virtuele machine. Het voorkomt de bekende uitspraak: "It works on my machine", dit bekomt Docker door in een afgeschermde en ge"isoleerde omgeving te werken. Deze omgeving bevatten alle benodigde dependencies en requirements. Docker bevat ook een ingebouwd version tracking door gebruik te maken van Docker tags. Een applicatie in een Docker container zal op eender wel systeem exact hetzelfde runnen ongeacht van de reeds ge"installeerde software op het host systeem.
 
-Daarna vertelde de spreker wat Docker containers zijn, hoe je ze kan maken of afhalen van het internet. Een container kan vergeleken worden met een virtuele machine, in de zin dat het ge\"isoleerd is van de host computer en dat het alles bevat wat de applicatie nodig heeft om te runnen. Maar in tegenstelling tot een virtuele machine gaat een Docker container het operating system niet virtualiseren, maar het gebruikt die van de host. Hierdoor wordt de container veel kleiner dan een virtuele machine en heeft het praktisch geen opstarttijd.
+Het volgende onderwerp was een Docker container, wat ze zijn en hoe je er aan kan komen. Een Docker container kan vergeleken worden met een virtuele machine, in de zin dat het ge"isoleerd is van het host systeem en het alle benodigdhede bevan die de applicatie nodig heeft om te runnen. Het verschil met een virtuele machine is dat een Docker container geen operating system moet gaan virtualiseren, wat een virtuele machine wel moet doen. Een Docker container gebruikt het operating system van het host systeem. Hierdoor is een Docker container beduidend kleiner is formaat dan een virtuele machine en heeft het praktisch geen opstarttijd.
 
-De containers kunnen zelf gemaakt worden aan de hand van Dockerfiles waarin het build proces van een image gedefinieerd wordt. Er kunnen ook images afgehaald worden van een hub of repository door deze te pullen. Als er een image is, door ze te builden of pullen, kan hier een container van opgestart worden door de image te runnen. Er kunnen meerdere containers runnen van eenzelfde image. Na wijzigingen kan de container terug opgeslagen worden als een image en eventueel gepusht worden naar een repository of hub.
+Om een Docker container te bekomen is er eest een image nodig. Aan een Docker image kan je op twee manieren komen: je download het van het internet of je maakt er zelf een. Van een Docker registry kan een Docker image gepulld worden, dit is het equivalent van downloaden van het internet. De image kan ook zelf gebuild worden door het builden van een Dockerfile, een bestand waarin het buildproces van een image gedefinieerd wordt. Een Docker container verkrijg je als je deze Docker image runt. In een Docker container kunnen commits met veranderingen naar de image worden gedaan, waarna je deze Docker image weer naar een registry kan pushen.
 
-Na deze uitleg toonde Sven Luts ons hoe we Docker zelf konden installeren. Voor Docker werd er vooral met Linux gewerkt, als je het op Mac of Windows wou installeren draaide je achterliggend een Linux virtuele machine waarin je je containers kon draaien. Na de installatie volgde de basis commando's om de voordien uitgelegde acties uit te voeren en commando's om Docker te beheren en monitoren.
-
-Als afsluiter kregen we een demo te zien hoe snel en makkelijk Docker is een een website waar we dit zelf konden proberen zonder dat er een installatie nodig was. Dit was eerder de Hello World van Docker. En hij gaf een kleine vooruitblik naar wat er in de toekomst met Docker kan gebeuren en gerealiseerd worden. Zoals redundancy, load balancing, health monitoring en nog veel meer.
+De spreker toonde na deze uitleg hoe we Docker zelf konden installeren op ons systeem. Docker werkt achterliggend met Linux en vinden er geen problemen plaats bij een installatie op een Linux systeem. Als de installatie plaats vind op een Mac of een Windows systeem, gaat er in de achtergrond een virtuele machine met Linux opgestart worden die Docker beheert. Hierop volgde de uitleg van de basis commando's om Docker te beheren en monitoren.
 
 \begin{figure}[!h]
   \centering
-  \begin{subfigure}[h]{0.37\textwidth}
-    \centering
-    \includegraphics[width=0.8\linewidth]{docker/logo.png}
-  \end{subfigure}
-  \begin{subfigure}[h]{0.59\textwidth}
-    \centering
-    \includegraphics[width=\linewidth]{docker/docker_vs_vm.png}
-  \end{subfigure}
+  \includegraphics[width=0.72\linewidth]{images/docker/docker_vs_vm.png}
 \end{figure}
 
-Initieel vond ik het onderwerp van het seminarie boeiend, maar kon ik niet plaatsen hoe ik deze technologie zou kunnen gebruiken binnen mijn toekomstige projecten. Echter, toen ik gedurende de vakken rond artifici\"ele intelligentie en robotica in aanraking kwam met Docker, zag ik het het nut van dit seminarie in. Dit gaf mij niet alleen een grote voorsprong op mijn medestudenten die hier nog niet mee in aanraking gekomen waren, maar het deed mij ook beseffen dat het een zeer praktische technologie is waar ik in de toekomst ook nog gebruik van zou kunnen maken.
+Het seminarie sloot af met een korte demo over hoe we snel en gemakkelijk Docker commando's konden uittesten in een webapplicatie. Hiervoor moest er dus niets ge"installeerd worden. Deze demo functioneerde als de "Hello World!" van Docker. Na de demo gaf de spreker nog een kort vooruitzicht naar wat er in de toekomst met Docker kon gebeuren en gerealiseerd worden.
 
-Ondertussen heb ik al meerdere projecten met en in Docker gemaakt, ook mijn IT\hyp{}project en stage hadden Docker als basis. Dit seminarie en deze technologie hebben mij ge\"inspireerd om ge\"isoleerde applicaties te schrijven, maar ook hoe ik met dependencies kan en moet omgaan. Docker heeft mij ook al zeer veel tijd uitgespaard door het feit dat je meer kan experimenteren en altijd kan terugvallen op een punt waar de applicatie werkend is zonder enige moeite.
+Het onderwerp van het gegeven seminarie vond ik boeiend, maar ik kon niet plaatsen hoe ik deze technologie zou kunnen gebruiken binnen mijn toekomstige projecten. Echter, toen ik gedurdende de vakken rond artifici"ele intelligentie en robotica in aanraking kwam met Docker, zag ik het nut van deze Docker in. Dit gaf mij niet alleen een grote voorsprong op mijn medestudenten die hier nog niet mee in aanraking gekomen waren, maar het deed mij ook beseffen dat het een zeer praktische technologie is waar ik in de toekomst ook nog gebruik van zou maken.
 
-De spreker bracht deze presentatie zeer rustig en haalde goede punten aan. Hij verloor onze aandacht niet door niet af te dwalen, maar leuke weetjes over het huidige onderwerp kon aanbrengen. Zijn eigen ervaringen met Docker waren zeer leuke projecten dat volgens hem relatief snel ontwikkeld konden worden.
+Ondertussen zijn mijn grootste projecten in Docker gemaakt. Namelijk mijn IT\hyp{}project en mijn stage hadden Docker als basis. Het seminarie en de technologie hebben mij ge"inspireerd om ge"isoleerde applicaties te gaan schrijven. Ook ga ik heel anders om met dependencies dan ik voordien deed, ik zorg dat ik altijd een stabiele versie van een bepaalde software gebruik en dat er geen conflicten zijn tussen de gebruikte software. Docker geeft in een bepaalde zin meer vrijheid om te experimenteren met het project. Doordat je altijd terug kan gaan naar een stabiele versie waarin de applicatie werkend is.
 
-Ik ben zeer blij dat ik dit seminarie heb opgenomen omwille van het gebruik van Docker nu, maar het is zeker nuttig voor iedereen om te weten wat deze technologie is en het te overwegen om deze zelf te gebruiken. Naar mijn mening, mag Docker ook gegeven of aangehaald worden in vakken zoals Desktop OS of Server OS Essentials.
+De spreker bracht deze presentatie zeer rustig en haalde goede punten aan. Door niet af te dwalen maar toch wat leuke weetjes in zijn presentatie te stoppen, verloor hij niemand zijn aandacht. Hij deelde zijn eigen ervaring met Docker. Zijn projecten konden zonder probleem op elke computer met Docker runnen, zonder dat hij hier enige extra moeiten in had gestoken.
+
+Naar mijn mening is Docker zo handig dat ik het in een laat eerste of vroeg tweede jaars vak aan zou halen. Dit kan makkelijk in vakken zoals Desktop OS of Server OS Essentials, waar we al kennis maakten met Linux. De tijd die ik al gewonnen heb met Docker en de vrijheid die je er van krijgt, zorgen ervoor dat Docker momenteel een van mijn favoriete en meest gebruikte technologie is.
 
 Spreker: Sven Luts, software engineer bij AariXa, \url{https://be.linkedin.com/in/svenluts/nl}
 
 
 \begin{figure}[!h]
-  \includegraphics[width=\linewidth]{docker/flow.png}
+  \centering
+  \includegraphics[width=0.74\linewidth]{images/docker/flow.png}
 \end{figure}
