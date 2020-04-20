@@ -1,0 +1,70 @@
+\usepackage{a4wide}  % Use a wider area of the page
+\usepackage{graphicx}  % Ability to add images
+\graphicspath{{images/}}  % Define image directory
+\usepackage[utf8]{inputenc}  % Set input encoder to UTF-8
+\usepackage[dutch]{babel}  % Specify written language
+\usepackage{scrextend}
+\usepackage{outlines}  % Create easy lists
+\usepackage{xcolor}  % Change colors
+\usepackage{tabularx}  % More advanced tables
+\usepackage{paralist}
+\usepackage{hyphenat}
+\usepackage{subcaption}
+\captionsetup[subfigure]{labelformat=empty}
+
+\usepackage{soul} % Mag weg
+
+%----------------------------------------------------------------------------------------
+% TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\usepackage{tocstyle}
+\usetocstyle{standard}
+\settocfeature{entryvskip}{7.9pt}  % Vertical space between entries
+
+%----------------------------------------------------------------------------------------
+% PARAGRAPHS
+%----------------------------------------------------------------------------------------
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1\baselineskip}
+
+%----------------------------------------------------------------------------------------
+% COLORS
+%----------------------------------------------------------------------------------------
+
+\usepackage{xcolor} % Required for specifying custom colors
+
+\definecolor{pxlgreen}{RGB}{73,153,20}
+
+%----------------------------------------------------------------------------------------
+% SECTIONS
+%----------------------------------------------------------------------------------------
+
+\usepackage{sectsty}
+
+\sectionfont{\clearpage} % Start each section on a new page
+
+%----------------------------------------------------------------------------------------
+% LINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage[hidelinks]{hyperref}
+
+\hypersetup{
+  linktoc=all
+}
+
+%----------------------------------------------------------------------------------------
+% HEADER & FOOTER
+%----------------------------------------------------------------------------------------
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{Portfolio I-Talent}
+\cfoot{Vic Segers}
+\rfoot{\thepage}
